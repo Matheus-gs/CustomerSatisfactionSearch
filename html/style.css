@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f5f5f5;
+}
+
+form {
+  width: 800px;
+  height: 400px;
+
+  background: #fff;
+
+  box-shadow: rgb(0, 0, 0, 0.5) 0px 0px 8px 1px;
+
+  border-radius: 8px;
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+form h2 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: rgb(60, 60, 60);
+}
+
+.avaliacoes {
+  width: 800px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.5s ease;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+
+  background-color: #ffffff;
+
+  box-shadow: rgb(0, 0, 0, 0.5) 0px 0px 8px 1px;
+
+  border-radius: 10px;
+
+  display: block;
+
+  position: relative;
+
+  transition: all 1s ease;
+}
+
+.checks {
+  display: none;
+}
+
+#bad:checked + .card {
+  transform: scale(1.05);
+  border: 1px solid #f54343;
+  box-shadow: #f5434388 0px 0px 15px 2px;
+}
+
+#medium:checked + .card {
+  transform: scale(1.05);
+  border: 1px solid #3665ff;
+  box-shadow: #3665ff88 0px 0px 15px 2px;
+}
+
+#great:checked + .card {
+  transform: scale(1.05);
+  border: 1px solid #1bff6e;
+  box-shadow: #1bff6e88 0px 0px 15px 2px;
+}
+
+.selected {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.selected img {
+  width: 60%;
+
+  margin: 20px 0px 0px 0px;
+}
+
+.cardDescription {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f5f5f5;
+  font-size: 1.0rem;
+  font-weight: bold;
+
+  border-radius: 0px 0px 10px 10px;
+}
+
+.cardDescription.bad {
+  background-color: #f54343;
+}
+.cardDescription.medium {
+  background-color: #3665ff;
+}
+.cardDescription.great {
+  background-color: #1bff6e;
+}
+
+.sendAvaliationBtn {
+  width: 150px;
+  height: 50px;
+
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  margin: 0px 0px 8px 0px;
+
+  background-color: #3665ff; 
+  color: #f0f0f0;
+
+  font-size: 1.0rem;
+  font-weight: bold;
+
+  transition: 0.5s ease;
+}
+
+.sendAvaliationBtn:hover {
+    background-color: #426eff;
+    color: #fff;
+  box-shadow: #3665ff 0px 0px 8px 0px;
+}
