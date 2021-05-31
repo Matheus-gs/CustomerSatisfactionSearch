@@ -18,11 +18,11 @@ app.get("/", (req, res) => {
 })
 
 app.get("/style.css", (req, res) => {
-    res.sendfile(__dirname.concat("/html/style.css"))
+    res.sendfile(__dirname.concat("/html/style.css"));
 })
 
 app.get("/script.js", (req, res) => {
-    res.sendFile(__dirname + "/html/script.js")
+    res.sendFile(__dirname + "/html/script.js");
 })
 
 
